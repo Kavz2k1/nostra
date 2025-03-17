@@ -6,7 +6,7 @@
 }
 body{
     font-family: 'Poppins', sans-serif;
-    overflow: hidden;
+    overflow-x: hidden;
    
    
 
@@ -237,6 +237,8 @@ body{
     flex-wrap: wrap;
     /* gap: 5px; */
     overflow-x: hidden;
+    width: 100%; 
+    box-sizing: border-box;
     
 }
 
@@ -251,20 +253,25 @@ body{
 
 .customer-box{
     display: flex;
+    gap: 10px;
+    flex-wrap: wrap;
     overflow-x: hidden;
+    width: 100%; 
     
 }
 
 #cust-box{
     display: grid;
     gap: 10px;
+    
     background-color: rgb(234, 233, 233);
     border: none;
     border-radius: 10px;
     flex-direction: row;
     padding: 15px;
-    max-width: 250px;
-    height: 270px;
+    /* max-width: 250px; */
+    /* height: 270px; */
+
     
 
 }
