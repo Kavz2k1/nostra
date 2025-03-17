@@ -1,0 +1,249 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Nostra</title>
+    <!--tailwind-->
+    <link href="
+    https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css
+    " rel="stylesheet">
+    <!--googlefonts-->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;700&display=swap" rel="stylesheet">   
+    <!--fontawsome-->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
+    <!--style-->
+    <link rel="stylesheet" href="style.css">
+    
+</head>
+<body>
+    <!--offerbar-->
+    <div id = "offerbar"class = " text-color-white flex items-center justify-around">
+        <p class = " text-sm md:font-thin text-2xl">Sign Up and <b class = "font-extrabold text-2xl ">Get 20% OFF </b> for your first product</p>
+        <p id = "off-close"class = "cursor-pointer">X</p>
+    </div>
+
+    
+      
+    <!--Navbar1-->
+    <nav id class = "flex justify-between p-5 gap-5 shadow-xl sticky top-0 z-20 bg-white">
+       <p class = "font-semibold text-2xl">Nostra</p>
+
+       <svg id = "menuicon" xmlns=" http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-6 h-6 md:hidden">
+        <path stroke-linecap="round" stroke-linejoin="round" d="M3.75 6.75h16.5M3.75 12h16.5m-16.5 5.25h16.5" />
+      </svg>
+
+       <div class = "flex gap-12 hidden md:flex">
+        <p><a class = "hover:underline" href = "index.html">Home</a></p>
+        <p><a class = "hover:underline" href = "#new-arrival">New Arrival</a></p>
+        <p><a class = "hover:underline" href = "#most-wanted">Most wanted</a></p>
+        <p><a class = "hover:underline" href = "collection.html">Collections</a></p>
+        <p><a class = "hover:underline" href = "contact.html">Contact</a></p>
+       </div>
+    </nav> 
+    
+    <!--side navbar-->
+<section id = "sidenav" class ="bg-black fixed z-20 top-0 trasnsition-all duration-1000" style = "width:50%;height: 100vh; right: -50%;">
+    <!--right -50% will move the content to extreme right-->
+    <div class = "text-right p-5">
+        <p id = "closenav" class = "inline cursor-pointer text-white" >X</p>
+    </div>
+    <ul class = "flex flex-col gap-10 items-center text-gray-600">
+        <li><a class = "hover:underline hover:text-white" href ="index.html" >Home</a></li>
+        <li><a class ="hover:underline hover:text-white" href = "collection.html">Collection</a></li>
+        <li><a class = "hover:underline hover:text-white" href = "contact.html">Contact</a></li>
+      </ul>
+</section>
+
+    <!--slider-->
+    <div id = "slide-main" class = "md:p-10">
+        <div class = "slider">
+            <div class = "btn-left">
+                <i id class="fa-solid fa-angle-left" style="color: white;"></i>
+                </div>
+
+                <div class = "slider-text ">
+                    <h1 >Level up your style with our</h1>
+                    <h4>Summer Collections </h4>
+                    <button >shopnow ⮕</button>
+                </div>
+
+                <div class = "slider-img">
+                    <img class = "s__image" src = "image/slider-one1.jpg">
+                   <img class = "s__image" src ="image/slider4.jpeg">
+                    <img class = "s__image" src ="image/slider5.jpeg"> 
+                </div>
+                
+            <div class ="btn-right">
+                <i class="fa-solid fa-angle-right" style="color:white;"></i>
+            </div>
+        </div>
+    </div>
+
+    <!--brands-->
+
+    <section>
+        <div class = "h1brand">
+            <h1>Brands</h1>
+        </div>
+        <div class = "brands" id = "brands">
+        <div>
+            <img src = "image/puma.png" alt = "puma-img">
+            <h1>Puma</h1>
+        </div>
+        <div>
+            <img src = "image/leaves.png" alt = "leaves-img">
+            <h1>leaves</h1>
+        </div>
+        <div>
+            <img src = "image/adidas.png" alt = "adidas-img">
+            <h1>adidas</h1>
+        </div>
+        <div>
+            <img src = "image/simple.png" alt = "leaves-img">
+            <h1>Simple</h1>
+        </div>
+        <div>
+            <img src = "image/behance-puma.png" alt = Behance-img>
+            <h1>Behance</h1>
+        </div>
+        <div>
+            <img src = "image/twitch.png" alt = "Twich-img">
+            <h1>Twich</h1>
+        </div>
+        <!-- <div>
+            <img src = "image/leaves.png" alt = "leaves-img">
+            <h1>leaves</h1>
+        </div> -->
+    </div>
+</section>
+
+    <!--customer exp-->
+    <div class = "cust-exp">
+            <div>
+            <h1><pre>We Provide Best
+Customer Experiences</pre></h1>
+            </div>
+            <div>
+            <h3>|| We ensure that our customer have the best shopping experience</h3></div>
+    </div>
+
+    <div class = "customer-box">
+        <div  id = "cust-box" class = "border border-black p-2 m-6">
+            <!--heroicons-->
+            <i style="font-size: 3vw;margin-bottom: 10px;" class="fa-regular fa-circle-check"></i>
+            <h2 class = "text-xl font-medium">Original Products</h2>
+            <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Porro, consequuntur.</p>
+        </div>
+        <div  id = "cust-box"  class = "border border-black p-2 m-6">
+            <i style="font-size: 3vw;margin-bottom: 10px;" class="fa-regular fa-face-smile"></i>
+                   
+              
+            <h2 class = "text-xl font-medium">Satisfaction Guarantee</h2>
+            <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Porro, consequuntur.</p>
+        </div>
+        <div  id = "cust-box"  class = "border border-black p-2 m-6">
+            <i style="font-size: 3vw;margin-bottom: 10px;" class="fa-solid fa-broom"></i>
+            <h2 class = "text-xl font-medium">New Arrival Everyday</h2>
+            <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Porro, consequuntur.</p>
+        </div>
+        <div  id = "cust-box"  class = "border border-black p-2 m-6">
+            <i style="font-size: 3vw;margin-bottom: 10px;" class="fa-solid fa-truck-fast"></i>
+            <h2 class = "text-xl font-medium">Fast & Free Shipping</h2>
+            <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Porro, consequuntur.</p>
+        </div>
+    </div>
+    <!--new arrival-->
+    <section id = "new-arrival" class  ="initial-scroll-animate reveal-scroll-animate">
+        <h1 class = "newarrival_h1">New Arrival</h1>
+        <div class = "newarrival">
+            <div class = "arr_cont">
+                <img src = "image/new_arr1.jpg" alt = "new arrived">
+                <button>Shop Now ⮕</button>
+            </div>
+            <div  class = "arr_cont">
+                <img src = "image/new_arr2.jpg" alt = "new arrived">
+                <button>Shop Now ⮕</button>
+            </div>
+            <div  class = "arr_cont">
+                <img src = "image/new_arr3.jpg" alt = "new arrived">
+                <button>Shop Now ⮕</button>
+            </div>
+            <div  class = "arr_cont">
+                <img src = "image/new_arr4.jpg" alt = "new arrived">
+                <button>Shop Now ⮕</button>
+            </div>
+        </div>
+    </section>
+
+    <!--Most wantel-->
+    <section id = "most-wanted" class ="initial-scroll-animate reveal-scroll-animate">
+        <h2 class = "wanted_h2">Most Wanted</h2>
+        <div class = "most_wanted">
+            <div class = "wanted_cont">
+                <img class=" wanted_img" src = "image/n8.jpg" alt = "">
+                <p class ="sale-overlay">sale</p>
+                <img class = "like" src = "image/blackheart.png" alt = "like">
+            </div>
+            <div  class = "wanted_cont" >
+                <img class=" wanted_img" src = "image/n3.jpg" alt = "">
+                <p class ="sale-overlay">sale</p>
+                <img class = "like" src = "image/blackheart.png" alt = "like">
+            </div>
+            <div  class = "wanted_cont">
+                <img class=" wanted_img" src = "image/n4.jpg" alt = "">
+                <p class ="sale-overlay">sale</p>
+                <img class = "like" src = "image/blackheart.png" alt = "like">
+            </div>
+            <div class = "wanted_cont">
+                <img class=" wanted_img" src = "image/new_arr1.jpg" alt = "">
+                <p class ="sale-overlay">sale</p>
+                <img class = "like" src = "image/blackheart.png" alt = "like">
+            <!-- </div>
+            <div  class = "wanted_cont">
+                <img class=" wanted_img" src = "image/new_arr2.jpg" alt = "">
+                <p class ="sale-overlay">sale</p>
+                <img class = "like" src = "image/blackheart.png" alt = "like">
+            </div> -->
+            <!-- <div  class = "wanted_cont">
+                <img class=" wanted_img" src = "image/new_arr3.jpg" alt = "">
+                <p class ="sale-overlay">sale</p>
+                <img class = "like" src = "image/blackheart.png" alt = "like">
+            </div>
+            <div  class = "wanted_cont">
+                <img class=" wanted_img" src = "image/new_arr4.jpg" alt = "">
+                <p class ="sale-overlay">sale</p>
+                <img class = "like" src = "image/blackheart.png" alt = "like">
+            </div>
+            <div  class = "wanted_cont">
+                <img class=" wanted_img" src = "image/new_arr2.jpg" alt = "">
+                <p class ="sale-overlay">sale</p>
+                <img class = "like" src = "image/blackheart.png" alt = "like">
+            </div> -->
+        </div>
+    </section>
+
+    <!--News letter-->
+<section>
+    <div class = "text-center">
+        <h1 class = "font-extrabold text-3xl mt-5">Join our News Letter</h1>
+        <p class = "mt-2 m-2">Signup for our email newspaper to get exclusive discounts, updates and more</p>
+        <input type ="text" class = "border border-black mt-2 p-2 m-3" style="width:80%;">
+        <br>
+        <button class = "p-3 bg-black text-white underline">Subscribe</button>
+    </div>
+    
+    </section>
+
+    <!--footer-->
+<section id = "footer" class = "flex flex-col gap-5 mt-8 p-10">
+    <h1 class ="font-bold text-3xl mt-10">Nostra</h1>
+    <p class ="mt-5">The Standard chunk of Lorem ipsum used since the 1500s is reprodused below for those interest</p>
+    <p>@ 2023 Nostra.com</p>
+    </section>
+    
+    <script src="index.js"></script>
+</body>
+</html>

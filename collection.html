@@ -1,0 +1,169 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>collections</title>
+      <!--tailwind-->
+      <link href="
+      https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css
+      " rel="stylesheet">
+      <!--googlefonts-->
+      <link rel="preconnect" href="https://fonts.googleapis.com">
+      <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+      <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;700&display=swap" rel="stylesheet">   
+      <!--fontawsome-->
+      <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
+      <!--style-->
+      <link rel="stylesheet" href="style.css">
+</head>
+<body>
+        <!--offerbar-->
+        <div id = "offerbar"class = " text-color-white flex items-center justify-around">
+            <p class = " text-sm md:font-thin text-2xl">Sign Up and <b class = "font-extrabold text-2xl ">Get 20% OFF </b> for your first product</p>
+            <p id = "off-close"class = "cursor-pointer">X</p>
+        </div>
+    
+        
+          
+        <!--Navbar1-->
+        <nav id class = "flex justify-between p-5 gap-5 shadow-xl sticky top-0 z-20 bg-white">
+           <p class = "font-semibold text-2xl">Nostra</p>
+    
+           <svg id = "menuicon" xmlns=" http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-6 h-6 md:hidden">
+            <path stroke-linecap="round" stroke-linejoin="round" d="M3.75 6.75h16.5M3.75 12h16.5m-16.5 5.25h16.5" />
+          </svg>
+    
+           <div class = "flex gap-12 hidden md:flex">
+            <p><a class = "hover:underline" href = "index.html">Home</a></p>
+            <!-- <p><a class = "hover:underline" href = "#new-arrival">New Arrival</a></p>
+            <p><a class = "hover:underline" href = "#most-wanted">Most wanted</a></p> -->
+            <p><a class = "hover:underline" href = "collection.html">Collections</a></p>
+            <p><a class = "hover:underline" href = "contact.html">Contact</a></p>
+           </div>
+        </nav> 
+          <!--side navbar-->
+<section id = "sidenav" class ="bg-black fixed z-20 top-0 trasnsition-all duration-1000" style = "width:50%;height: 100vh; right: -50%;">
+    <!--right -50% will move the content to extreme right-->
+    <div class = "text-right p-5">
+        <p id = "closenav" class = "inline cursor-pointer text-white" >X</p>
+    </div>
+    <ul class = "flex flex-col gap-10 items-center text-gray-600">
+        <li><a class = "hover:underline hover:text-white" href ="index.html" >Home</a></li>
+        <li><a class ="hover:underline hover:text-white" href = "collection.html">Collection</a></li>
+        <li><a class = "hover:underline hover:text-white" href = "contact.html">Contact</a></li>
+      </ul>
+</section>
+
+    <!--filter-radio-->
+        <div class = "cont">
+            <div class = "filter-main">
+                <div class = "filter-opt">
+                    <h3>Occasion</h3>
+                    <div>
+                        <input type = "checkbox" name = "tag" value ="Summer">Summer<br>
+                        <input type = "checkbox"  name = "tag" value ="Party">Party<br>
+                        <input type = "checkbox"  name = "tag" value ="Beach">Beach<br>
+                        <input type = "checkbox"  name = "tag" value ="Beach">Formal<br>
+                    </div>
+
+                    <h3>Colors</h3>
+                    <div>
+                        <input type = "checkbox" name = "tag" value ="Red">Red<br>
+                        <input type = "checkbox"  name = "tag" value ="Blue">Blue<br>
+                        <input type = "checkbox"  name = "tag" value ="While">White<br>
+                        <input type = "checkbox"  name = "tag" value ="Green">Green<br>
+                        
+                    </div>
+                    
+            </div>
+             <!--Products-->
+    <div class = "container_prod">
+  
+        <div class ="font-thin text-s">
+            <input id = "search" type = "text" class = "p-2 border border-black" style="width: 100%;" placeholder="Search for a Product.." >
+          
+        </div>
+    </section>
+
+    <section  class ="p-4 text-center mt-5">
+        <div  id = "product-container" class =" grid grid-cols-2 mt-5 gap-10 md:grid-cols-3">
+            <div data-tags="Summer Red"> 
+                <img  src = "image/col1.jpg" alt ="" class ="inline hover:shadow-xl transform hover:-translate-y-2">
+                <h2 class = "mt-5">Floral Summer Shirt</h2>
+                <p>₹425</p>
+            </div>
+        
+       
+
+        <div data-tags="Party Green">
+            <img src = "image/col2.jpg" alt ="" class ="inline hover:shadow-xl transform hover:-translate-y-2">
+            <h2 class ="mt-5">Cristata green shirt</h2>
+            <p>₹230</p>
+        </div>
+        <div data-tags="Party Green">
+            <img src = "image/col3.jpg" alt ="" class ="inline hover:shadow-xl transform hover:-translate-y-2">
+            <h2 class ="mt-5">Multicolor floral shirt</h2>
+            <p>₹412</p>
+        </div>
+        <div data-tags="Beach White">
+            <img src = "image/col4.jpg" alt ="" class ="inline hover:shadow-xl transform hover:-translate-y-2">
+            <h2 class = "mt-5">Vaccy casual shirt</h2>
+            <p>₹310</p>
+        </div>
+
+        <div data-tags="Beach Blue">
+            <img src = "image/col5.jpg" alt ="" class ="inline hover:shadow-xl transform hover:-translate-y-2">
+            <h2 class ="mt-5">Semi Casual shirt </h2>
+            <p>₹620</p>
+        </div> 
+        <div data-tags="Beach Blue">
+            <img src = "image/col6.jpg" alt ="" class ="inline hover:shadow-xl transform hover:-translate-y-2">
+            <h2 class ="mt-5">Orchid floral shirt</h2>
+            <p>$20</p>
+        </div>
+        <div data-tags="Formal White">
+            <img src = "image/n3.jpg" alt ="" class ="inline hover:shadow-xl transform hover:-translate-y-2">
+            <h2 class ="mt-5">Formal white shirt</h2>
+            <p>₹416</p>
+        </div>
+        <div data-tags="Formal Blue">
+            <img src = "image/new_arr3.jpg" alt ="" class ="inline hover:shadow-xl transform hover:-translate-y-2">
+            <h2 class ="mt-5">Formal Blue shirt </h2>
+            <p>₹350</p>
+        </div>
+        <div data-tags="Formal Blue">
+            <img src = "image/n8.jpg" alt ="" class ="inline hover:shadow-xl transform hover:-translate-y-2">
+            <h2 class ="mt-5">Formal Grey shirt </h2>
+            <p>₹350</p>
+        </div>
+        
+        </section>
+        </div>
+    </div>
+    </div>
+
+    
+      <!--News letter-->
+<section>
+    <div class = "text-center">
+        <h1 class = "font-extrabold text-3xl mt-5">Join our News Letter</h1>
+        <p class = "mt-2 m-2">Signup for our email newspaper to get exclusive discounts, updates and more</p>
+        <input type ="text" class = "border border-black mt-2 p-2 m-3" style="width:80%;">
+        <br>
+        <button class = "p-3 bg-black text-white underline">Subscribe</button>
+    </div>
+    
+    </section>
+
+
+
+    <!--footer-->
+<section id = "footer" class = "bg-blue-950 flex-col gap-5 mt-8 p-10">
+    <h1 class =" font-bold text-3xl mt-10">Nostra</h1>
+    <p class ="mt-5">The Standard chunk of Lorem ipsum used since the 1500s is reprodused below for those interest</p>
+    <p>@ 2023 Nostra.com</p>
+    </section>
+    <script src="collectin.js"></script>
+</body>
+</html>
