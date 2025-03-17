@@ -171,8 +171,9 @@ offerbar-close{
    
 }
 #brands div{
+    
    align-items: center;
-    width: 100px;
+    max-width: 120px;
     padding: 10px;
     flex-grow: 1;
 }
