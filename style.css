@@ -283,7 +283,7 @@ body{
     .cust-exp{
         flex-direction: column;
         align-items: center;
-        /* overflow-x: hidden; */
+        overflow-x: hidden;
     }
     .customer-box{
         flex-direction: column;
