@@ -26,14 +26,20 @@ body{
 #offerbar-close{
     cursor: pointer;
 }
-@media screen and (min-width:200px) and (max-width: 768px){
+@media screen and (min-width:528px) and (max-width: 768px){
     #offerbar b{
         font-size: 12px;
     }
     #offerbar p{
         font-size: 12px;
     }
+    #offerbar{
+        width: 100%;
+    }
 }
+
+
+
 
 /* slidebar */
 #slide-main{
@@ -155,6 +161,9 @@ body{
 
     }
 }
+
+
+
 /* brands */
 .h1brand{
 
@@ -200,7 +209,7 @@ body{
    padding: 10px;
 }
 
-@media screen and (min-width:200px) and (max-width: 768px) {
+@media  (max-width: 768px) {
     #brands{
       flex-wrap: nowrap;
       gap: 2px;
@@ -264,6 +273,7 @@ gap: 10px;
 @media screen and (min-width:200px) and (max-width:786px){
     .cust-exp{
         flex-direction: column;
+        overflow-x: hidden;
     }
     .customer-box{
         flex-direction: row;
