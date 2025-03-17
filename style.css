@@ -263,7 +263,7 @@ body{
 #cust-box{
     display: grid;
     gap: 10px;
-    
+    max-width: 90%; 
     background-color: rgb(234, 233, 233);
     border: none;
     border-radius: 10px;
@@ -282,12 +282,13 @@ body{
 @media   (max-width:786px){
     .cust-exp{
         flex-direction: column;
+        align-items: center;
         /* overflow-x: hidden; */
     }
     .customer-box{
-        flex-direction: row;
+        flex-direction: column;
         width: 100%; 
-        min-width: 500px;
+        min-width: auto;
        
     }
     #cust-box{
